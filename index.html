@@ -9,7 +9,10 @@
     <!-- Playfair for the display type, Lora for anything that has to be
          READ. Both cover Turkish diacritics, which matters for Aygün. -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <!-- The ?v= is a cache buster. Without it Safari keeps serving an old
+         stylesheet against a fresh page, so the site looks unchanged no
+         matter how many times you refresh. Bump it on every CSS edit. -->
+    <link rel="stylesheet" href="styles.css?v=2" />
   </head>
   <body>
     <div class="container">
@@ -77,6 +80,6 @@
       <p class="fine-print">Designed by: @Namze</p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js?v=2"></script>
   </body>
 </html>
