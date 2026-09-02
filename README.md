@@ -1,87 +1,55 @@
-# Birthday-Page
+# A Birthday Page for Aygün
 
-# Richard's Birthday Surprise Webpage
+A small interactive birthday card, built as a single page and hosted on GitHub
+Pages so it can be opened from a phone anywhere in the world.
 
-Welcome to the source code for a special birthday webpage created for Richard MacFarlane! This project is a heartfelt gift, featuring a personalized message, a slideshow of memories, a love letter pop-up, red heart confetti, a shimmering card effect, and an embedded Apple Music player for "No Strings" by Ed Sheeran—his dedicated song. Built with HTML, CSS, and JavaScript, this webpage is designed to celebrate his birthday on July 27, 2025, with love and creativity.
+**Live:** https://cathy-45.github.io/Birthday-Card-Turkey/
 
-## Overview
+## What it does
 
-- **Purpose**: A romantic and interactive birthday surprise for Richard.
-- **Features**:
-  - Custom birthday message and header.
-  - Slideshow of personal photos.
-  - Pop-up love letter with a personal note.
-  - Red heart confetti animation on page load and button click.
-  - Shimmering card effect for a magical touch.
-  - Apple Music embed for "No Strings" to play his dedicated song.
-- **Technologies**: HTML, CSS (with animations), JavaScript (with JSConfetti library).
-- **Hosted**: Deployed via GitHub Pages (URL: [https://yourusername.github.io/birthday-page](https://yourusername.github.io/birthday-page)).
+- A shimmering card that animates on a gradient background
+- Heart confetti on load, and again on the Celebrate button
+- A slideshow of photos that advances on its own
+- A countdown to the day itself
+- A letter hidden behind Open Me, revealed in a modal
 
-## Setup Instructions
+## Built with
 
-To run this project locally or customize it, follow these steps:
+Plain HTML, CSS and JavaScript. No framework and no build step, so the whole
+thing is three files you can open directly in a browser.
 
-1. **Clone the Repository**:
+Confetti comes from [js-confetti](https://github.com/loonywizard/js-confetti)
+via CDN. Everything else is hand written.
 
-   - Open a terminal and run:
-     ```bash
-     git clone https://github.com/yourusername/birthday-page.git
-     ```
-   - Replace `yourusername` with your GitHub username.
+## The files
 
-2. **Install Dependencies**:
+| File | What it holds |
+|---|---|
+| `index.html` | The card, the message and the letter |
+| `styles.css` | The gradient, the shimmer, the modal |
+| `script.js` | Countdown, slideshow, confetti, modal |
+| `image1-3.jpg` | The photos in the slideshow |
 
-   - No additional dependencies are required beyond a web browser, but for development, install [Visual Studio Code](https://code.visualstudio.com/) and the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension.
+## Editing it
 
-3. **Prepare Files**:
+Change the words in `index.html`. Change the countdown target in `script.js`.
+Drop in new photos over `image1.jpg` to `image3.jpg`, keeping the same names,
+and the slideshow picks them up with no other changes.
 
-   - Place your personal photos (e.g., `image1.jpg`, `image2.jpg`, `image3.jpg`) in the project folder.
-   - Ensure the Apple Music embed works with your iTunes purchase (no local file needed).
+Then:
 
-4. **Run Locally**:
+```bash
+git add -A && git commit -m "..." && git push
+```
 
-   - Open the project folder in VS Code.
-   - Right-click `index.html` and select "Open with Live Server" to preview the webpage.
-   - Test the slideshow, confetti, love letter, and music player.
+GitHub Pages rebuilds within a minute or so.
 
-5. **Customize**:
-   - Edit `index.html` to change the name in `<h1 id="birthdayHeader">` and the love letter in `<p id="loveLetter">`.
-   - Add more photos by duplicating `<div class="slide">` blocks in `index.html`.
-   - Modify `styles.css` to adjust colors or the shimmer effect.
+## A note on the repo
 
-## Usage
+This is public, because GitHub Pages needs a paid plan to serve from a private
+repository. Anything written into the card can be read by anyone who finds the
+repository, not only by whoever is sent the link.
 
-- **Open the Webpage**: Visit the deployed URL (or open `index.html` locally) to experience the surprise.
-- **Interact**:
-  - Click "Celebrate!" to trigger red heart confetti.
-  - Click "Open me" to view a personal message.
-  - Click the Apple Music player to start "No Strings" (autoplay may require interaction due to browser policies).
-- **Note**: The shimmer effect enhances the card’s appearance, and the confetti animates on load and button click.
+---
 
-## Deployment
-
-- The webpage is hosted on GitHub Pages. To update:
-  1. Make changes in VS Code.
-  2. Commit and push to the repository:
-     ```bash
-     git add .
-     git commit -m "Update for Richard's birthday"
-     git push origin main
-     ```
-  - The live site will update automatically.
-
-## Personal Note
-
-This webpage is a labor of love, crafted with care for Richard’s 52nd birthday on July 27, 2025. The "No Strings" song, red hearts, and shimmering card reflect our unbreakable bond. I hope this surprise brings a smile to your face, my love! 💖
-
-- Created by: [Catherine Sichone]
-- Date: July 20, 2025
-
-## License
-
-This project is for personal use only. Feel free to fork or adapt it, but please respect the privacy of the content.
-
-## Acknowledgments
-
-- Inspired by Richard’s dedication of "No Strings" by Ed Sheeran.
-- Thanks to the JSConfetti library for the heart animation: [https://www.jsconfetti.com](https://www.jsconfetti.com).
+Made with love, from a long way away.
