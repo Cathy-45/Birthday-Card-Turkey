@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Lora", Georgia, serif;
   background: linear-gradient(to bottom, #1d5f6c, #6796a0);
   color: #143c50;
   display: flex;
@@ -31,6 +31,7 @@ body {
 }
 
 h1 {
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 2.5em;
   color: #f2fbfd;
   text-shadow: 0 2px 10px rgba(0, 32, 40, 0.75);
@@ -129,7 +130,9 @@ p {
 
 .modal-content {
   background-color: #23616d;
-  font: 200 1.2em dancing script, cursive;
+  font-family: "Lora", Georgia, serif;
+  font-size: 1.15em;
+  font-weight: 400;
   padding: 20px;
   border-radius: 55px;
   max-width: 800px;
@@ -148,9 +151,13 @@ p {
 }
 
 #loveLetter {
-  font-style: italic;
-  color: #010f13;
-  line-height: 1.6;
+  font-style: normal;
+  color: #f4fbfc;
+  font-size: 1.06em;
+  line-height: 1.75;
+  text-align: left;
+  max-width: 34em;
+  margin: 0 auto;
 }
 
 @media (max-width: 600px) {
@@ -162,6 +169,15 @@ p {
   }
   .modal-content {
     max-width: 90%;
+    border-radius: 26px;
+    padding: 22px 18px;
+  }
+  #loveLetter {
+    font-size: 1em;
+    line-height: 1.7;
+  }
+  h1 {
+    line-height: 1.15;
   }
 }
 iframe {
